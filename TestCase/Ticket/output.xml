@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on darwin)" generated="2026-04-21T09:48:20.826618" rpa="false" schemaversion="5">
+<suite id="s1" name="TicketCreationTest" source="/Users/faryzaaina/Documents/TM/DSS FORCE/portal-testing-automation-DSS-FORCE/TestCase/Ticket/TicketCreationTest.robot">
+<test id="s1-t1" name="Execute Ticket Creation" line="12">
+<kw name="Launch Application" owner="LaunchApp">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-21T09:48:32.405996" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-21T09:48:32.405380" elapsed="6.295951"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-21T09:48:38.701961" elapsed="0.332157"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${EXECDIR}/Screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-04-21T09:48:39.034271" elapsed="0.000450"/>
+</kw>
+<status status="PASS" start="2026-04-21T09:48:32.403994" elapsed="6.630818"/>
+</kw>
+<kw name="Login App" owner="LoginApp">
+<msg time="2026-04-21T09:48:39.035298" level="FAIL">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</msg>
+<doc>Perform successful login with valid credentials.</doc>
+<status status="FAIL" start="2026-04-21T09:48:39.035157" elapsed="0.000176">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</kw>
+<kw name="Main Page" owner="LoginApp">
+<doc>Ensure main page is loaded</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:39.041461" elapsed="0.000041"/>
+</kw>
+<kw name="Search Ticket Creation" owner="TicketCreationDSS">
+<doc>Test case to search Ticket Creation</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:39.041766" elapsed="0.000021"/>
+</kw>
+<doc>To test Ticket Creation</doc>
+<tag>Simulation Portal</tag>
+<status status="FAIL" start="2026-04-21T09:48:32.402785" elapsed="6.639156">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</test>
+<test id="s1-t2" name="Execute Mandatory Fields Validation Test" line="21">
+<kw name="Launch Application" owner="LaunchApp">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-21T09:48:39.042709" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-21T09:48:39.042582" elapsed="1.504009"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-21T09:48:40.546982" elapsed="0.321402"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${EXECDIR}/Screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-04-21T09:48:40.868534" elapsed="0.000417"/>
+</kw>
+<status status="PASS" start="2026-04-21T09:48:39.042413" elapsed="1.826661"/>
+</kw>
+<kw name="Login App" owner="LoginApp">
+<msg time="2026-04-21T09:48:40.869850" level="FAIL">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</msg>
+<doc>Perform successful login with valid credentials.</doc>
+<status status="FAIL" start="2026-04-21T09:48:40.869691" elapsed="0.000184">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</kw>
+<kw name="Main Page" owner="LoginApp">
+<doc>Ensure main page is loaded</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:40.869969" elapsed="0.000014"/>
+</kw>
+<kw name="Navigate To Ticket Creation In Sidebar" owner="TicketCreationDSS">
+<doc>DSS uses the left tree (not legacy top bar webix_tm_id='task'). Open menu, expand Ticket, open Ticket Creation.</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:40.870067" elapsed="0.000014"/>
+</kw>
+<kw name="Submit And Verify Validation Error" owner="TicketCreationDSS">
+<doc>Clicks Submit without filling required fields and verifies validation</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:40.870150" elapsed="0.000013"/>
+</kw>
+<doc>Test submitting a ticket without entering mandatory fields</doc>
+<tag>Negative</tag>
+<tag>Simulation Portal</tag>
+<status status="FAIL" start="2026-04-21T09:48:39.042118" elapsed="1.828150">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</test>
+<test id="s1-t3" name="Execute Ticket Cancel Test" line="30">
+<kw name="Launch Application" owner="LaunchApp">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-21T09:48:40.870997" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-21T09:48:40.870883" elapsed="1.896855"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-21T09:48:42.768213" elapsed="0.317186"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${EXECDIR}/Screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-04-21T09:48:43.085559" elapsed="0.000456"/>
+</kw>
+<status status="PASS" start="2026-04-21T09:48:40.870750" elapsed="2.215342"/>
+</kw>
+<kw name="Login App" owner="LoginApp">
+<msg time="2026-04-21T09:48:43.086515" level="FAIL">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</msg>
+<doc>Perform successful login with valid credentials.</doc>
+<status status="FAIL" start="2026-04-21T09:48:43.086392" elapsed="0.000146">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</kw>
+<kw name="Main Page" owner="LoginApp">
+<doc>Ensure main page is loaded</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:43.086632" elapsed="0.000014"/>
+</kw>
+<kw name="Navigate To Ticket Creation In Sidebar" owner="TicketCreationDSS">
+<doc>DSS uses the left tree (not legacy top bar webix_tm_id='task'). Open menu, expand Ticket, open Ticket Creation.</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:43.086740" elapsed="0.000018"/>
+</kw>
+<kw name="Cancel Ticket Creation" owner="TicketCreationDSS">
+<doc>Clicks the Cancel button in the ticket creation form</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:43.086824" elapsed="0.000011"/>
+</kw>
+<doc>Test the cancellation flow inside ticket creation</doc>
+<tag>Simulation Portal</tag>
+<status status="FAIL" start="2026-04-21T09:48:40.870507" elapsed="2.216432">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</test>
+<test id="s1-t4" name="Execute Dependent Dropdown Field Test" line="39">
+<kw name="Launch Application" owner="LaunchApp">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-21T09:48:43.087738" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-21T09:48:43.087592" elapsed="1.885682"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-21T09:48:44.974072" elapsed="0.400038"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${EXECDIR}/Screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-04-21T09:48:45.374256" elapsed="0.000509"/>
+</kw>
+<status status="PASS" start="2026-04-21T09:48:43.087434" elapsed="2.287531"/>
+</kw>
+<kw name="Login App" owner="LoginApp">
+<msg time="2026-04-21T09:48:45.375469" level="FAIL">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</msg>
+<doc>Perform successful login with valid credentials.</doc>
+<status status="FAIL" start="2026-04-21T09:48:45.375316" elapsed="0.000178">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</kw>
+<kw name="Main Page" owner="LoginApp">
+<doc>Ensure main page is loaded</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:45.375587" elapsed="0.000098"/>
+</kw>
+<kw name="Navigate To Ticket Creation In Sidebar" owner="TicketCreationDSS">
+<doc>DSS uses the left tree (not legacy top bar webix_tm_id='task'). Open menu, expand Ticket, open Ticket Creation.</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:45.375778" elapsed="0.000013"/>
+</kw>
+<kw name="Open Webix Combo" owner="TicketCreationDSS">
+<arg>Ticket Category</arg>
+<status status="NOT RUN" start="2026-04-21T09:48:45.375858" elapsed="0.000013"/>
+</kw>
+<kw name="Select Webix Option" owner="TicketCreationDSS">
+<arg>INCIDENT</arg>
+<status status="NOT RUN" start="2026-04-21T09:48:45.375933" elapsed="0.000010"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:45.376023" elapsed="0.000016"/>
+</kw>
+<kw name="Open Webix Combo" owner="TicketCreationDSS">
+<arg>Case Category</arg>
+<status status="NOT RUN" start="2026-04-21T09:48:45.376104" elapsed="0.000011"/>
+</kw>
+<kw name="Select Webix Option" owner="TicketCreationDSS">
+<arg>INTERNET</arg>
+<status status="NOT RUN" start="2026-04-21T09:48:45.376253" elapsed="0.000023"/>
+</kw>
+<kw name="Wait For Spinner To Disappear" owner="TicketCreationDSS">
+<doc>Wait until the spinner element is no longer visible</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:45.376389" elapsed="0.000021"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:45.376487" elapsed="0.000014"/>
+</kw>
+<doc>Test that changing category correctly restricts the options in subsequent fields</doc>
+<tag>Simulation Portal</tag>
+<status status="FAIL" start="2026-04-21T09:48:43.087094" elapsed="2.289551">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</test>
+<test id="s1-t5" name="Execute Form Payload Sanitization Test" line="55">
+<kw name="Launch Application" owner="LaunchApp">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-21T09:48:45.377494" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-21T09:48:45.377357" elapsed="2.365922"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-21T09:48:47.744497" elapsed="0.406815"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${EXECDIR}/Screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-04-21T09:48:48.151438" elapsed="0.000313"/>
+</kw>
+<status status="PASS" start="2026-04-21T09:48:45.377183" elapsed="2.774641"/>
+</kw>
+<kw name="Login App" owner="LoginApp">
+<msg time="2026-04-21T09:48:48.152164" level="FAIL">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</msg>
+<doc>Perform successful login with valid credentials.</doc>
+<status status="FAIL" start="2026-04-21T09:48:48.152066" elapsed="0.000120">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</kw>
+<kw name="Main Page" owner="LoginApp">
+<doc>Ensure main page is loaded</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:48.152272" elapsed="0.000014"/>
+</kw>
+<kw name="Navigate To Ticket Creation In Sidebar" owner="TicketCreationDSS">
+<doc>DSS uses the left tree (not legacy top bar webix_tm_id='task'). Open menu, expand Ticket, open Ticket Creation.</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:48.152377" elapsed="0.000013"/>
+</kw>
+<kw name="Enter Input" owner="TicketCreationDSS">
+<arg>Description</arg>
+<arg>&lt;script&gt;alert("XSS")&lt;/script&gt; Test Payload</arg>
+<status status="NOT RUN" start="2026-04-21T09:48:48.152457" elapsed="0.000019"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-21T09:48:48.152544" elapsed="0.000013"/>
+</kw>
+<doc>Test description payload with XSS string</doc>
+<tag>Security</tag>
+<tag>Simulation Portal</tag>
+<status status="FAIL" start="2026-04-21T09:48:45.376827" elapsed="2.775825">Keyword 'LoginApp.Login App' expected 2 arguments, got 0.</status>
+</test>
+<status status="FAIL" start="2026-04-21T09:48:20.827497" elapsed="27.325554"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Negative</stat>
+<stat pass="0" fail="1" skip="0">Security</stat>
+<stat pass="0" fail="5" skip="0">Simulation Portal</stat>
+</tag>
+<suite>
+<stat name="TicketCreationTest" id="s1" pass="0" fail="5" skip="0">TicketCreationTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

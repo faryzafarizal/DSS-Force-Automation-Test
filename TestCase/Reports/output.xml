@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on darwin)" generated="2026-04-15T15:13:44.791806" rpa="false" schemaversion="5">
+<suite id="s1" name="ActivitySummaryTest" source="/Users/faryzaaina/Documents/TM/DSS FORCE/portal-testing-automation-DSS-FORCE/TestCase/Reports/ActivitySummaryTest.robot">
+<test id="s1-t1" name="Verify Activity Summary Navigation" line="10">
+<kw name="Launch Application" owner="LaunchApp">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-15T15:13:44.963021" level="INFO">Opening browser 'chrome' to base url 'https://force-dss.tm.com.my/#!/login'.</msg>
+<msg time="2026-04-15T15:13:49.620350" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-15T15:13:49.620669" level="FAIL">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=147.0.7727.56)
+Stacktrace:
+0   chromedriver                        0x000000010537bab4 cxxbridge1$str$ptr + 3192864
+1   chromedriver                        0x0000000105373a84 cxxbridge1$str$ptr + 3160048
+2   chromedriver                        0x0000000104e3f7c0 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75348
+3   chromedriver                        0x0000000104e37868 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42748
+4   chromedriver                        0x0000000104e29f44 cxxbridge1$string$len + 5152
+5   chromedriver                        0x0000000104e2ba48 cxxbridge1$string$len + 12068
+6   chromedriver                        0x0000000104e2a3ac cxxbridge1$string$len + 6280
+7   chromedriver                        0x0000000104e29b98 cxxbridge1$string$len + 4212
+8   chromedriver                        0x0000000104e29884 cxxbridge1$string$len + 3424
+9   chromedriver                        0x0000000104e27448 chromedriver + 226376
+10  chromedriver                        0x0000000104e27f14 chromedriver + 229140
+11  chromedriver                        0x0000000104e42ca4 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 88888
+12  chromedriver                        0x0000000104ec7f04 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634264
+13  chromedriver                        0x0000000104ec7448 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 631516
+14  chromedriver                        0x0000000104e7ce50 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326884
+15  chromedriver                        0x0000000105339240 cxxbridge1$str$ptr + 2920364
+16  chromedriver                        0x000000010533ca20 cxxbridge1$str$ptr + 2934668
+17  chromedriver                        0x000000010531f1f4 cxxbridge1$str$ptr + 2813792
+18  chromedriver                        0x000000010533d2a0 cxxbridge1$str$ptr + 2936844
+19  chromedriver                        0x000000010531001c cxxbridge1$str$ptr + 2751880
+20  chromedriver                        0x0000000105362980 cxxbridge1$str$ptr + 3090156
+21  chromedriver                        0x0000000105362afc cxxbridge1$str$ptr + 3090536
+22  chromedriver                        0x00000001053736dc cxxbridge1$str$ptr + 3159112
+23  libsystem_pthread.dylib             0x00000001831082e4 _pthread_start + 136
+24  libsystem_pthread.dylib             0x00000001831030fc thread_start + 8
+</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-15T15:13:44.962891" elapsed="4.662325">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=147.0.7727.56)
+Stacktrace:
+0   chromedriver                        0x000000010537bab4 cxxbridge1$str$ptr + 3192864
+1   chromedriver                        0x0000000105373a84 cxxbridge1$str$ptr + 3160048
+2   chromedriver                        0x0000000104e3f7c0 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75348
+3   chromedriver                        0x0000000104e37868 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42748
+4   chromedriver                        0x0000000104e29f44 cxxbridge1$string$len + 5152
+5   chromedriver                        0x0000000104e2ba48 cxxbridge1$string$len + 12068
+6   chromedriver                        0x0000000104e2a3ac cxxbridge1$string$len + 6280
+7   chromedriver                        0x0000000104e29b98 cxxbridge1$string$len + 4212
+8   chromedriver                        0x0000000104e29884 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+... _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326884
+15  chromedriver                        0x0000000105339240 cxxbridge1$str$ptr + 2920364
+16  chromedriver                        0x000000010533ca20 cxxbridge1$str$ptr + 2934668
+17  chromedriver                        0x000000010531f1f4 cxxbridge1$str$ptr + 2813792
+18  chromedriver                        0x000000010533d2a0 cxxbridge1$str$ptr + 2936844
+19  chromedriver                        0x000000010531001c cxxbridge1$str$ptr + 2751880
+20  chromedriver                        0x0000000105362980 cxxbridge1$str$ptr + 3090156
+21  chromedriver                        0x0000000105362afc cxxbridge1$str$ptr + 3090536
+22  chromedriver                        0x00000001053736dc cxxbridge1$str$ptr + 3159112
+23  libsystem_pthread.dylib             0x00000001831082e4 _pthread_start + 136
+24  libsystem_pthread.dylib             0x00000001831030fc thread_start + 8</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-04-15T15:13:49.625514" elapsed="0.000030"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${EXECDIR}/Screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="NOT RUN" start="2026-04-15T15:13:49.625618" elapsed="0.000014"/>
+</kw>
+<status status="FAIL" start="2026-04-15T15:13:44.962480" elapsed="4.663276">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=147.0.7727.56)
+Stacktrace:
+0   chromedriver                        0x000000010537bab4 cxxbridge1$str$ptr + 3192864
+1   chromedriver                        0x0000000105373a84 cxxbridge1$str$ptr + 3160048
+2   chromedriver                        0x0000000104e3f7c0 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75348
+3   chromedriver                        0x0000000104e37868 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42748
+4   chromedriver                        0x0000000104e29f44 cxxbridge1$string$len + 5152
+5   chromedriver                        0x0000000104e2ba48 cxxbridge1$string$len + 12068
+6   chromedriver                        0x0000000104e2a3ac cxxbridge1$string$len + 6280
+7   chromedriver                        0x0000000104e29b98 cxxbridge1$string$len + 4212
+8   chromedriver                        0x0000000104e29884 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+... _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326884
+15  chromedriver                        0x0000000105339240 cxxbridge1$str$ptr + 2920364
+16  chromedriver                        0x000000010533ca20 cxxbridge1$str$ptr + 2934668
+17  chromedriver                        0x000000010531f1f4 cxxbridge1$str$ptr + 2813792
+18  chromedriver                        0x000000010533d2a0 cxxbridge1$str$ptr + 2936844
+19  chromedriver                        0x000000010531001c cxxbridge1$str$ptr + 2751880
+20  chromedriver                        0x0000000105362980 cxxbridge1$str$ptr + 3090156
+21  chromedriver                        0x0000000105362afc cxxbridge1$str$ptr + 3090536
+22  chromedriver                        0x00000001053736dc cxxbridge1$str$ptr + 3159112
+23  libsystem_pthread.dylib             0x00000001831082e4 _pthread_start + 136
+24  libsystem_pthread.dylib             0x00000001831030fc thread_start + 8</status>
+</kw>
+<kw name="Login App" owner="LoginApp">
+<doc>Perform successful login with valid credentials.</doc>
+<status status="NOT RUN" start="2026-04-15T15:13:49.626081" elapsed="0.000019"/>
+</kw>
+<kw name="Main Page" owner="LoginApp">
+<doc>Ensure main page is loaded</doc>
+<status status="NOT RUN" start="2026-04-15T15:13:49.626181" elapsed="0.000013"/>
+</kw>
+<kw name="Navigate To Activity Summary" owner="ReportsDSS">
+<doc>Navigate to Activity Summary under Reports</doc>
+<status status="NOT RUN" start="2026-04-15T15:13:49.626266" elapsed="0.000013"/>
+</kw>
+<doc>Verify navigation to Activity Summary</doc>
+<tag>Regression</tag>
+<tag>Reports</tag>
+<status status="FAIL" start="2026-04-15T15:13:44.962066" elapsed="4.664342">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=147.0.7727.56)
+Stacktrace:
+0   chromedriver                        0x000000010537bab4 cxxbridge1$str$ptr + 3192864
+1   chromedriver                        0x0000000105373a84 cxxbridge1$str$ptr + 3160048
+2   chromedriver                        0x0000000104e3f7c0 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75348
+3   chromedriver                        0x0000000104e37868 _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42748
+4   chromedriver                        0x0000000104e29f44 cxxbridge1$string$len + 5152
+5   chromedriver                        0x0000000104e2ba48 cxxbridge1$string$len + 12068
+6   chromedriver                        0x0000000104e2a3ac cxxbridge1$string$len + 6280
+7   chromedriver                        0x0000000104e29b98 cxxbridge1$string$len + 4212
+8   chromedriver                        0x0000000104e29884 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+... _RNvCs10ygTOo3JCa_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 326884
+15  chromedriver                        0x0000000105339240 cxxbridge1$str$ptr + 2920364
+16  chromedriver                        0x000000010533ca20 cxxbridge1$str$ptr + 2934668
+17  chromedriver                        0x000000010531f1f4 cxxbridge1$str$ptr + 2813792
+18  chromedriver                        0x000000010533d2a0 cxxbridge1$str$ptr + 2936844
+19  chromedriver                        0x000000010531001c cxxbridge1$str$ptr + 2751880
+20  chromedriver                        0x0000000105362980 cxxbridge1$str$ptr + 3090156
+21  chromedriver                        0x0000000105362afc cxxbridge1$str$ptr + 3090536
+22  chromedriver                        0x00000001053736dc cxxbridge1$str$ptr + 3159112
+23  libsystem_pthread.dylib             0x00000001831082e4 _pthread_start + 136
+24  libsystem_pthread.dylib             0x00000001831030fc thread_start + 8</status>
+</test>
+<status status="FAIL" start="2026-04-15T15:13:44.797294" elapsed="4.829562"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Regression</stat>
+<stat pass="0" fail="1" skip="0">Reports</stat>
+</tag>
+<suite>
+<stat name="ActivitySummaryTest" id="s1" pass="0" fail="1" skip="0">ActivitySummaryTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
