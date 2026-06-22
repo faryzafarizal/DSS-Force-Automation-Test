@@ -36,7 +36,7 @@ Your Connection not Private
 
 Login App
     [Documentation]    Perform successful login with valid credentials.
-    [Arguments]    ${user}    ${pass}
+    [Arguments]    ${user}=${username}    ${pass}=${password}
 
     Bypass SIT Environment If Needed
     Wait Until Keyword Succeeds    30s    1s    At Least One Login Control Visible

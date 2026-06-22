@@ -1,0 +1,7 @@
+.venv/
+Screenshots/
+log.html
+output.xml
+report.html
+~.xlsx
+.DS_Store

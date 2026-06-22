@@ -22,16 +22,18 @@ ${Resources}               xpath=//div[@class='webix_tree_item' and span[text()=
 ${Audit_Logs}              xpath=//div[@class='webix_tree_item' and span[text()='Audit/Logs']]
 
 # Ticket Page
-${Ticket}                  xpath=//div[@class='webix_tree_item' and span[text()='Ticket']]
-${Ticket_Creation}         xpath=//div[@class='webix_tree_item' and span[text()='Ticket Creation']]
-${Ticket_List}             xpath=//div[@class='webix_tree_item' and span[text()='Ticket List']]
+${Ticket}                  xpath=//div[contains(@class, 'webix_tree_item') and .//span[normalize-space()='Ticket']]
+${Ticket_Creation}         xpath=//div[contains(@class, 'webix_tree_item') and .//span[normalize-space()='Ticket Creation']]
+${Ticket_List}             xpath=//div[contains(@class, 'webix_tree_item') and .//span[normalize-space()='Ticket List']]
 ${Ticket_Activity_List}    xpath=//div[@class='webix_tree_item' and span[text()='Ticket Activity List']]
+${Ticket_Activity_List_Tooltip}    xpath=//div[contains(@class, 'webix_tooltip') and text()='Ticket Activity List']
+${Ticket_List_Search_Button}       xpath=//button[contains(@class, 'webix_button') and text()='Search']
 ${Ticket_Search}           xpath=//div[@class='webix_tree_item' and span[text()='Ticket Search']]
 ${Ticket_History}          xpath=//div[@class='webix_tree_item' and span[text()='Ticket Activity List']]
 ${Ticket_Activity_History}    xpath=//div[@class='webix_tree_item' and span[text()='Ticket Activity History']]
-
+${Ticket_List_Action_Button}       xpath=//div[contains(@class, 'webix_cell') and @aria-colindex='16']//span[contains(@class, 'mdi-dots-vertical')]
 # Ticket Creation Page
-${Ticket_Creation}         xpath=//div[@class='webix_tree_item' and span[text()='Ticket Creation']]
+${Ticket_Creation}         xpath=//div[contains(@class, 'webix_tree_item') and .//span[normalize-space()='Ticket Creation']]
 
 # Main app navigation & ticket creation flow (TicketCreationDSS / LoginApp)
 ${Spinner}                 xpath=//div[contains(@class, 'webix_progress_state') and contains(@class, 'wxi-sync') and contains(@class, 'webix_spin')]

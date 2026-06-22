@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.5 on darwin)" generated="2026-04-15T15:35:02.332245" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.13.5 on darwin)" generated="2026-04-27T15:10:56.798734" rpa="false" schemaversion="5">
 <suite id="s1" name="LoginTest" source="/Users/faryzaaina/Documents/TM/DSS FORCE/portal-testing-automation-DSS-FORCE/TestCase/Login/LoginTest.robot">
 <test id="s1-t1" name="Valid Login (Positive Scenario)" line="17">
 <kw name="Launch App For Login" type="SETUP">
 <kw name="Launch Application" owner="LaunchApp">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:05.782128" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
+<msg time="2026-04-27T15:10:58.442363" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-15T15:35:05.781412" elapsed="2.997363"/>
+<status status="PASS" start="2026-04-27T15:10:58.442245" elapsed="9.833670"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-15T15:35:08.779040" elapsed="0.331361"/>
+<status status="PASS" start="2026-04-27T15:11:08.276207" elapsed="0.319564"/>
 </kw>
 <kw name="Set Screenshot Directory" owner="SeleniumLibrary">
 <arg>${EXECDIR}/Screenshots</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2026-04-15T15:35:09.110635" elapsed="0.000404"/>
+<status status="PASS" start="2026-04-27T15:11:08.596051" elapsed="0.000357"/>
 </kw>
-<status status="PASS" start="2026-04-15T15:35:05.780114" elapsed="3.331015"/>
+<status status="PASS" start="2026-04-27T15:10:58.441882" elapsed="10.154603"/>
 </kw>
 <kw name="Your Connection not Private" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:09.438517" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-37.png"&gt;&lt;img src="Screenshots/selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:09.439006" level="FAIL">Page should have contained text 'Your connection is not private' but did not.</msg>
+<msg time="2026-04-27T15:11:09.317504" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-53.png"&gt;&lt;img src="Screenshots/selenium-screenshot-53.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:09.317752" level="FAIL">Page should have contained text 'Your connection is not private' but did not.</msg>
 <arg>Your connection is not private</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-15T15:35:09.112004" elapsed="0.342566">Page should have contained text 'Your connection is not private' but did not.</status>
+<status status="FAIL" start="2026-04-27T15:11:08.597226" elapsed="0.742993">Page should have contained text 'Your connection is not private' but did not.</status>
 </kw>
-<msg time="2026-04-15T15:35:09.454833" level="INFO">${is_ssl_error} = False</msg>
+<msg time="2026-04-27T15:11:09.340331" level="INFO">${is_ssl_error} = False</msg>
 <var>${is_ssl_error}</var>
 <arg>Page Should Contain</arg>
 <arg>Your connection is not private</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:09.111584" elapsed="0.343297"/>
+<status status="PASS" start="2026-04-27T15:11:08.596865" elapsed="0.743483"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
-<msg time="2026-04-15T15:35:09.455665" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2026-04-27T15:11:09.342122" level="INFO">Returning from the enclosing user keyword.</msg>
 <arg>not ${is_ssl_error}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:09.455126" elapsed="0.000638"/>
+<status status="PASS" start="2026-04-27T15:11:09.340446" elapsed="0.001722"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${AdvancedButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:09.455847" elapsed="0.000016"/>
+<status status="NOT RUN" start="2026-04-27T15:11:09.342243" elapsed="0.000014"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>simulation.tmforcedev.tm.com.my (unsafe)</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:09.455913" elapsed="0.000012"/>
+<status status="NOT RUN" start="2026-04-27T15:11:09.342301" elapsed="0.000010"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
 <arg>${ProceedLink}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:09.455967" elapsed="0.000010"/>
+<status status="NOT RUN" start="2026-04-27T15:11:09.342355" elapsed="0.000009"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:09.456115" elapsed="0.000023"/>
+<status status="NOT RUN" start="2026-04-27T15:11:09.342414" elapsed="0.000011"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -72,335 +72,335 @@
 <arg>prefs</arg>
 <arg>${CHROME_PREFS}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:09.456204" elapsed="0.000030"/>
+<status status="NOT RUN" start="2026-04-27T15:11:09.342466" elapsed="0.000009"/>
 </kw>
 <doc>Open the browser and handle SSL certificate warning</doc>
-<status status="PASS" start="2026-04-15T15:35:09.111330" elapsed="0.344974"/>
+<status status="PASS" start="2026-04-27T15:11:08.596654" elapsed="0.745861"/>
 </kw>
-<status status="PASS" start="2026-04-15T15:35:05.779651" elapsed="3.676687"/>
+<status status="PASS" start="2026-04-27T15:10:58.441716" elapsed="10.900826"/>
 </kw>
 <kw name="Login App" owner="LoginApp">
 <kw name="Bypass SIT Environment If Needed" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:10.290953" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-38.png"&gt;&lt;img src="Screenshots/selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:10.291075" level="FAIL">Element with locator 'xpath=//input[@placeholder='Username']' not found.</msg>
+<msg time="2026-04-27T15:11:10.012931" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-54.png"&gt;&lt;img src="Screenshots/selenium-screenshot-54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:10.013043" level="FAIL">Element with locator 'xpath=//input[@placeholder='Username']' not found.</msg>
 <arg>${username_input}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:09.457452" elapsed="0.836080">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:09.343181" elapsed="0.675310">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:10.293625" level="INFO">${already} = False</msg>
+<msg time="2026-04-27T15:11:10.018578" level="INFO">${already} = False</msg>
 <var>${already}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${username_input}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:09.457290" elapsed="0.836349"/>
+<status status="PASS" start="2026-04-27T15:11:09.343051" elapsed="0.675541"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
 <arg>${already}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:10.293738" elapsed="0.000169"/>
+<status status="PASS" start="2026-04-27T15:11:10.018680" elapsed="0.000152"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${SIT_Button}</arg>
 <arg>8s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-15T15:35:10.294088" elapsed="0.005371"/>
+<status status="PASS" start="2026-04-27T15:11:10.019001" elapsed="0.005881"/>
 </kw>
-<msg time="2026-04-15T15:35:10.299545" level="INFO">${sit} = True</msg>
+<msg time="2026-04-27T15:11:10.024966" level="INFO">${sit} = True</msg>
 <var>${sit}</var>
 <arg>Wait Until Page Contains Element</arg>
 <arg>${SIT_Button}</arg>
 <arg>8s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:10.293964" elapsed="0.005596"/>
+<status status="PASS" start="2026-04-27T15:11:10.018887" elapsed="0.006094"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
 <arg>not ${sit}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:10.299635" elapsed="0.000173"/>
+<status status="PASS" start="2026-04-27T15:11:10.025059" elapsed="0.000185"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:10.300199" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:10.026197" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:10.300023" elapsed="0.003855"/>
+<status status="PASS" start="2026-04-27T15:11:10.025468" elapsed="0.005648"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:10.804511" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:10.533797" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:10.303956" elapsed="0.500914"/>
+<status status="PASS" start="2026-04-27T15:11:10.031210" elapsed="0.502764"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2026-04-15T15:35:10.299963" elapsed="0.505116"/>
+<status status="PASS" start="2026-04-27T15:11:10.025409" elapsed="0.508670"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:10.806706" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:10.534956" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:10.805860" elapsed="0.008499"/>
+<status status="PASS" start="2026-04-27T15:11:10.534462" elapsed="0.004713"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:11.315637" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:11.040606" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:10.814657" elapsed="0.501135"/>
+<status status="PASS" start="2026-04-27T15:11:10.539346" elapsed="0.501631"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2026-04-15T15:35:10.805510" elapsed="0.510762"/>
+<status status="PASS" start="2026-04-27T15:11:10.534307" elapsed="0.506780"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:11.316752" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:11.042012" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:11.316480" elapsed="0.010619"/>
+<status status="PASS" start="2026-04-27T15:11:11.041491" elapsed="0.021629"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:11.829301" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:11.566252" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:11.327250" elapsed="0.502530"/>
+<status status="PASS" start="2026-04-27T15:11:11.063314" elapsed="0.503343"/>
 </kw>
 <var name="${i}">2</var>
-<status status="PASS" start="2026-04-15T15:35:11.316389" elapsed="0.513619"/>
+<status status="PASS" start="2026-04-27T15:11:11.041312" elapsed="0.525529"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:11.832243" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:11.568625" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:11.831165" elapsed="0.007962"/>
+<status status="PASS" start="2026-04-27T15:11:11.567623" elapsed="0.007392"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:12.340423" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:12.076337" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:11.839372" elapsed="0.501584"/>
+<status status="PASS" start="2026-04-27T15:11:11.575274" elapsed="0.501295"/>
 </kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2026-04-15T15:35:11.830681" elapsed="0.510509"/>
+<status status="PASS" start="2026-04-27T15:11:11.567270" elapsed="0.509416"/>
 </iter>
 <var>${i}</var>
 <value>4</value>
-<status status="PASS" start="2026-04-15T15:35:10.299860" elapsed="2.041507"/>
+<status status="PASS" start="2026-04-27T15:11:10.025297" elapsed="2.051482"/>
 </for>
 <doc>DSS may show SIT/pre-login Webix buttons before the real login form.</doc>
-<status status="PASS" start="2026-04-15T15:35:09.457150" elapsed="2.884643"/>
+<status status="PASS" start="2026-04-27T15:11:09.342960" elapsed="2.733987"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="At Least One Login Control Visible" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:12.366928" level="INFO">Element 'xpath=//input[@placeholder='Username']' is displayed.</msg>
+<msg time="2026-04-27T15:11:12.102478" level="INFO">Element 'xpath=//input[@placeholder='Username']' is displayed.</msg>
 <arg>${username_input}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:12.344702" elapsed="0.022337"/>
+<status status="PASS" start="2026-04-27T15:11:12.079631" elapsed="0.022962"/>
 </kw>
-<msg time="2026-04-15T15:35:12.367199" level="INFO">${user visible} = True</msg>
+<msg time="2026-04-27T15:11:12.102759" level="INFO">${user visible} = True</msg>
 <var>${user visible}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${username_input}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:12.344214" elapsed="0.023015"/>
+<status status="PASS" start="2026-04-27T15:11:12.079050" elapsed="0.023738"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:13.050774" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-39.png"&gt;&lt;img src="Screenshots/selenium-screenshot-39.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:13.050870" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
+<msg time="2026-04-27T15:11:12.758282" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-55.png"&gt;&lt;img src="Screenshots/selenium-screenshot-55.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:12.758379" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:12.367773" elapsed="0.683584">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:12.103339" elapsed="0.655547">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:13.051430" level="INFO">${enter visible} = False</msg>
+<msg time="2026-04-27T15:11:12.758964" level="INFO">${enter visible} = False</msg>
 <var>${enter visible}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:12.367404" elapsed="0.684038"/>
+<status status="PASS" start="2026-04-27T15:11:12.102969" elapsed="0.656008"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${user visible} or ${enter visible}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.051521" elapsed="0.000196"/>
+<status status="PASS" start="2026-04-27T15:11:12.759066" elapsed="0.000223"/>
 </kw>
 <doc>True when username field or Enter CTA is already on screen.</doc>
-<status status="PASS" start="2026-04-15T15:35:12.343707" elapsed="0.708044"/>
+<status status="PASS" start="2026-04-27T15:11:12.078457" elapsed="0.680870"/>
 </kw>
 <arg>30s</arg>
 <arg>1s</arg>
 <arg>At Least One Login Control Visible</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-04-15T15:35:12.342296" elapsed="0.709476"/>
+<status status="PASS" start="2026-04-27T15:11:12.077214" elapsed="0.682135"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:13.692205" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-40.png"&gt;&lt;img src="Screenshots/selenium-screenshot-40.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:13.692298" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
+<msg time="2026-04-27T15:11:13.384329" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-56.png"&gt;&lt;img src="Screenshots/selenium-screenshot-56.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:13.384427" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:13.051940" elapsed="0.640846">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:12.759530" elapsed="0.625419">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:13.692860" level="INFO">${has_enter} = False</msg>
+<msg time="2026-04-27T15:11:13.385027" level="INFO">${has_enter} = False</msg>
 <var>${has_enter}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.051824" elapsed="0.641048"/>
+<status status="PASS" start="2026-04-27T15:11:12.759409" elapsed="0.625630"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${has_enter}</arg>
 <arg>Click Element</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.692959" elapsed="0.000160"/>
+<status status="PASS" start="2026-04-27T15:11:13.385133" elapsed="0.000158"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${username_input}</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.693177" elapsed="0.005969"/>
+<status status="PASS" start="2026-04-27T15:11:13.385351" elapsed="0.005925"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:13.699344" level="INFO">Typing text 'DSS08' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<msg time="2026-04-27T15:11:13.391502" level="INFO">Typing text 'DSS08' into text field 'xpath=//input[@placeholder='Username']'.</msg>
 <arg>${username_input}</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.699230" elapsed="0.122558"/>
+<status status="PASS" start="2026-04-27T15:11:13.391370" elapsed="0.135916"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${password_input}</arg>
 <arg>15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.821940" elapsed="0.007686"/>
+<status status="PASS" start="2026-04-27T15:11:13.527411" elapsed="0.038486"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:13.829866" level="INFO">Typing password into text field 'xpath=//input[@placeholder="Password"]'.</msg>
-<msg time="2026-04-15T15:35:13.847784" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-27T15:11:13.566162" level="INFO">Typing password into text field 'xpath=//input[@placeholder="Password"]'.</msg>
+<msg time="2026-04-27T15:11:13.577485" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_input}</arg>
 <arg>${pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.829732" elapsed="0.037663"/>
+<status status="PASS" start="2026-04-27T15:11:13.566014" elapsed="0.053722"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.867721" elapsed="0.025836"/>
+<status status="PASS" start="2026-04-27T15:11:13.619848" elapsed="0.008431"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:13.893808" level="INFO">Clicking element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]'.</msg>
+<msg time="2026-04-27T15:11:13.628531" level="INFO">Clicking element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]'.</msg>
 <arg>${LoginButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.893671" elapsed="0.028476"/>
+<status status="PASS" start="2026-04-27T15:11:13.628394" elapsed="0.028467"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
 <doc>Perform successful login with valid credentials.</doc>
-<status status="PASS" start="2026-04-15T15:35:09.456863" elapsed="4.465354"/>
+<status status="PASS" start="2026-04-27T15:11:09.342737" elapsed="4.314194"/>
 </kw>
 <kw name="Main Page" owner="LoginApp">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Announcement</arg>
 <arg>timeout=15</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-15T15:35:13.922531" elapsed="0.210572"/>
+<status status="PASS" start="2026-04-27T15:11:13.657240" elapsed="0.211635"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:17.139105" level="INFO">Slept 3 seconds.</msg>
+<msg time="2026-04-27T15:11:16.870292" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:14.133249" elapsed="3.009031"/>
+<status status="PASS" start="2026-04-27T15:11:13.869167" elapsed="3.003914"/>
 </kw>
 <doc>Ensure main page is loaded</doc>
-<status status="PASS" start="2026-04-15T15:35:13.922382" elapsed="3.221726"/>
+<status status="PASS" start="2026-04-27T15:11:13.657090" elapsed="3.216515"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-15T15:35:17.145414" elapsed="0.160368"/>
+<status status="PASS" start="2026-04-27T15:11:16.874693" elapsed="0.154300"/>
 </kw>
 <doc>Ensure valid credentials successfully log user into Main Page.</doc>
 <tag>Login</tag>
 <tag>Positive</tag>
-<status status="PASS" start="2026-04-15T15:35:05.778394" elapsed="11.527478"/>
+<status status="PASS" start="2026-04-27T15:10:58.441357" elapsed="18.587739"/>
 </test>
 <test id="s1-t2" name="Invalid Username (Negative Scenario)" line="23">
 <kw name="Launch App For Login" type="SETUP">
 <kw name="Launch Application" owner="LaunchApp">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:17.306665" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
+<msg time="2026-04-27T15:11:17.030210" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-15T15:35:17.306548" elapsed="1.450678"/>
+<status status="PASS" start="2026-04-27T15:11:17.030057" elapsed="2.197792"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-15T15:35:18.757505" elapsed="0.316993"/>
+<status status="PASS" start="2026-04-27T15:11:19.228531" elapsed="0.321941"/>
 </kw>
 <kw name="Set Screenshot Directory" owner="SeleniumLibrary">
 <arg>${EXECDIR}/Screenshots</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2026-04-15T15:35:19.074630" elapsed="0.000279"/>
+<status status="PASS" start="2026-04-27T15:11:19.550618" elapsed="0.000396"/>
 </kw>
-<status status="PASS" start="2026-04-15T15:35:17.306436" elapsed="1.768541"/>
+<status status="PASS" start="2026-04-27T15:11:17.029933" elapsed="2.521163"/>
 </kw>
 <kw name="Your Connection not Private" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:19.987077" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-41.png"&gt;&lt;img src="Screenshots/selenium-screenshot-41.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:19.987601" level="FAIL">Page should have contained text 'Your connection is not private' but did not.</msg>
+<msg time="2026-04-27T15:11:19.893865" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-57.png"&gt;&lt;img src="Screenshots/selenium-screenshot-57.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:19.894373" level="FAIL">Page should have contained text 'Your connection is not private' but did not.</msg>
 <arg>Your connection is not private</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-15T15:35:19.075568" elapsed="0.924169">Page should have contained text 'Your connection is not private' but did not.</status>
+<status status="FAIL" start="2026-04-27T15:11:19.551760" elapsed="0.357703">Page should have contained text 'Your connection is not private' but did not.</status>
 </kw>
-<msg time="2026-04-15T15:35:19.999871" level="INFO">${is_ssl_error} = False</msg>
+<msg time="2026-04-27T15:11:19.909762" level="INFO">${is_ssl_error} = False</msg>
 <var>${is_ssl_error}</var>
 <arg>Page Should Contain</arg>
 <arg>Your connection is not private</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:19.075332" elapsed="0.924554"/>
+<status status="PASS" start="2026-04-27T15:11:19.551485" elapsed="0.358293"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
-<msg time="2026-04-15T15:35:20.000867" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2026-04-27T15:11:19.919120" level="INFO">Returning from the enclosing user keyword.</msg>
 <arg>not ${is_ssl_error}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.000007" elapsed="0.000894"/>
+<status status="PASS" start="2026-04-27T15:11:19.910098" elapsed="0.009093"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${AdvancedButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:20.000964" elapsed="0.000013"/>
+<status status="NOT RUN" start="2026-04-27T15:11:19.919293" elapsed="0.000017"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>simulation.tmforcedev.tm.com.my (unsafe)</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:20.001019" elapsed="0.000010"/>
+<status status="NOT RUN" start="2026-04-27T15:11:19.919356" elapsed="0.000010"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
 <arg>${ProceedLink}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:20.001066" elapsed="0.000009"/>
+<status status="NOT RUN" start="2026-04-27T15:11:19.919401" elapsed="0.000008"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:20.001118" elapsed="0.000009"/>
+<status status="NOT RUN" start="2026-04-27T15:11:19.919452" elapsed="0.000011"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -408,335 +408,335 @@ Without any arguments.</msg>
 <arg>prefs</arg>
 <arg>${CHROME_PREFS}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:20.001163" elapsed="0.000013"/>
+<status status="NOT RUN" start="2026-04-27T15:11:19.919505" elapsed="0.000010"/>
 </kw>
 <doc>Open the browser and handle SSL certificate warning</doc>
-<status status="PASS" start="2026-04-15T15:35:19.075148" elapsed="0.926063"/>
+<status status="PASS" start="2026-04-27T15:11:19.551281" elapsed="0.368287"/>
 </kw>
-<status status="PASS" start="2026-04-15T15:35:17.306303" elapsed="2.694931"/>
+<status status="PASS" start="2026-04-27T15:11:17.029749" elapsed="2.889846"/>
 </kw>
 <kw name="Login App" owner="LoginApp">
 <kw name="Bypass SIT Environment If Needed" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:20.680601" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-42.png"&gt;&lt;img src="Screenshots/selenium-screenshot-42.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:20.680707" level="FAIL">Element with locator 'xpath=//input[@placeholder='Username']' not found.</msg>
+<msg time="2026-04-27T15:11:20.667836" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-58.png"&gt;&lt;img src="Screenshots/selenium-screenshot-58.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:20.667948" level="FAIL">Element with locator 'xpath=//input[@placeholder='Username']' not found.</msg>
 <arg>${username_input}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:20.001805" elapsed="0.679451">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:19.920308" elapsed="0.748385">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:20.681332" level="INFO">${already} = False</msg>
+<msg time="2026-04-27T15:11:20.668774" level="INFO">${already} = False</msg>
 <var>${already}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${username_input}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.001682" elapsed="0.679663"/>
+<status status="PASS" start="2026-04-27T15:11:19.920157" elapsed="0.748631"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
 <arg>${already}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.681433" elapsed="0.000154"/>
+<status status="PASS" start="2026-04-27T15:11:20.668888" elapsed="0.000161"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${SIT_Button}</arg>
 <arg>8s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.681759" elapsed="0.005654"/>
+<status status="PASS" start="2026-04-27T15:11:20.669236" elapsed="0.005750"/>
 </kw>
-<msg time="2026-04-15T15:35:20.687485" level="INFO">${sit} = True</msg>
+<msg time="2026-04-27T15:11:20.675050" level="INFO">${sit} = True</msg>
 <var>${sit}</var>
 <arg>Wait Until Page Contains Element</arg>
 <arg>${SIT_Button}</arg>
 <arg>8s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.681642" elapsed="0.005857"/>
+<status status="PASS" start="2026-04-27T15:11:20.669106" elapsed="0.005959"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
 <arg>not ${sit}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.687572" elapsed="0.000159"/>
+<status status="PASS" start="2026-04-27T15:11:20.675132" elapsed="0.000154"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:20.688163" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:20.675722" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.687940" elapsed="0.005162"/>
+<status status="PASS" start="2026-04-27T15:11:20.675498" elapsed="0.004395"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:21.196649" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:21.181494" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.694617" elapsed="0.502173"/>
+<status status="PASS" start="2026-04-27T15:11:20.680239" elapsed="0.501866"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2026-04-15T15:35:20.687886" elapsed="0.508976"/>
+<status status="PASS" start="2026-04-27T15:11:20.675445" elapsed="0.507179"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:21.197505" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:21.184727" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:21.197156" elapsed="0.003597"/>
+<status status="PASS" start="2026-04-27T15:11:21.184065" elapsed="0.006849"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:21.702040" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:21.692259" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:21.200881" elapsed="0.501457"/>
+<status status="PASS" start="2026-04-27T15:11:21.191153" elapsed="0.501335"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2026-04-15T15:35:21.197029" elapsed="0.505476"/>
+<status status="PASS" start="2026-04-27T15:11:21.183782" elapsed="0.508866"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:21.703998" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:21.693700" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:21.703283" elapsed="0.018686"/>
+<status status="PASS" start="2026-04-27T15:11:21.693113" elapsed="0.023969"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:22.225159" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:22.217953" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:21.722184" elapsed="0.503391"/>
+<status status="PASS" start="2026-04-27T15:11:21.717311" elapsed="0.501054"/>
 </kw>
 <var name="${i}">2</var>
-<status status="PASS" start="2026-04-15T15:35:21.702875" elapsed="0.522943"/>
+<status status="PASS" start="2026-04-27T15:11:21.692899" elapsed="0.525717"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:22.228051" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:22.220598" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:22.226760" elapsed="0.007942"/>
+<status status="PASS" start="2026-04-27T15:11:22.219506" elapsed="0.007227"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:22.736521" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:22.728041" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:22.235140" elapsed="0.501599"/>
+<status status="PASS" start="2026-04-27T15:11:22.227040" elapsed="0.501306"/>
 </kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2026-04-15T15:35:22.226302" elapsed="0.510551"/>
+<status status="PASS" start="2026-04-27T15:11:22.219088" elapsed="0.509443"/>
 </iter>
 <var>${i}</var>
 <value>4</value>
-<status status="PASS" start="2026-04-15T15:35:20.687782" elapsed="2.049167"/>
+<status status="PASS" start="2026-04-27T15:11:20.675337" elapsed="2.053374"/>
 </for>
 <doc>DSS may show SIT/pre-login Webix buttons before the real login form.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.001595" elapsed="2.735517"/>
+<status status="PASS" start="2026-04-27T15:11:19.920058" elapsed="2.808980"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="At Least One Login Control Visible" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:22.760203" level="INFO">Element 'xpath=//input[@placeholder='Username']' is displayed.</msg>
+<msg time="2026-04-27T15:11:22.755078" level="INFO">Element 'xpath=//input[@placeholder='Username']' is displayed.</msg>
 <arg>${username_input}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:22.739116" elapsed="0.021216"/>
+<status status="PASS" start="2026-04-27T15:11:22.732770" elapsed="0.022427"/>
 </kw>
-<msg time="2026-04-15T15:35:22.760500" level="INFO">${user visible} = True</msg>
+<msg time="2026-04-27T15:11:22.755362" level="INFO">${user visible} = True</msg>
 <var>${user visible}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${username_input}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:22.738758" elapsed="0.021780"/>
+<status status="PASS" start="2026-04-27T15:11:22.732169" elapsed="0.023222"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:23.410219" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-43.png"&gt;&lt;img src="Screenshots/selenium-screenshot-43.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:23.410310" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
+<msg time="2026-04-27T15:11:23.494881" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-59.png"&gt;&lt;img src="Screenshots/selenium-screenshot-59.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:23.494981" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:22.761109" elapsed="0.649691">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:22.755947" elapsed="0.739541">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:23.410876" level="INFO">${enter visible} = False</msg>
+<msg time="2026-04-27T15:11:23.495564" level="INFO">${enter visible} = False</msg>
 <var>${enter visible}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:22.760725" elapsed="0.650164"/>
+<status status="PASS" start="2026-04-27T15:11:22.755570" elapsed="0.740007"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${user visible} or ${enter visible}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-15T15:35:23.410978" elapsed="0.000212"/>
+<status status="PASS" start="2026-04-27T15:11:23.495667" elapsed="0.000223"/>
 </kw>
 <doc>True when username field or Enter CTA is already on screen.</doc>
-<status status="PASS" start="2026-04-15T15:35:22.738410" elapsed="0.672815"/>
+<status status="PASS" start="2026-04-27T15:11:22.731568" elapsed="0.764356"/>
 </kw>
 <arg>30s</arg>
 <arg>1s</arg>
 <arg>At Least One Login Control Visible</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-04-15T15:35:22.737366" elapsed="0.673882"/>
+<status status="PASS" start="2026-04-27T15:11:22.729519" elapsed="0.766427"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:24.026005" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-44.png"&gt;&lt;img src="Screenshots/selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:24.026107" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
+<msg time="2026-04-27T15:11:24.192300" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-60.png"&gt;&lt;img src="Screenshots/selenium-screenshot-60.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:24.192398" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:23.411417" elapsed="0.615195">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:23.496114" elapsed="0.696792">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:24.026687" level="INFO">${has_enter} = False</msg>
+<msg time="2026-04-27T15:11:24.192985" level="INFO">${has_enter} = False</msg>
 <var>${has_enter}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:23.411302" elapsed="0.615398"/>
+<status status="PASS" start="2026-04-27T15:11:23.495999" elapsed="0.696999"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${has_enter}</arg>
 <arg>Click Element</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.026786" elapsed="0.000160"/>
+<status status="PASS" start="2026-04-27T15:11:24.193097" elapsed="0.000177"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${username_input}</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.027003" elapsed="0.006403"/>
+<status status="PASS" start="2026-04-27T15:11:24.193331" elapsed="0.006520"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:24.033623" level="INFO">Typing text 'WRONGUSER' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<msg time="2026-04-27T15:11:24.200072" level="INFO">Typing text 'WRONGUSER' into text field 'xpath=//input[@placeholder='Username']'.</msg>
 <arg>${username_input}</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.033499" elapsed="0.110029"/>
+<status status="PASS" start="2026-04-27T15:11:24.199937" elapsed="0.168748"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${password_input}</arg>
 <arg>15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.143736" elapsed="0.011702"/>
+<status status="PASS" start="2026-04-27T15:11:24.369600" elapsed="0.030305"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:24.155779" level="INFO">Typing password into text field 'xpath=//input[@placeholder="Password"]'.</msg>
-<msg time="2026-04-15T15:35:24.168430" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-27T15:11:24.400231" level="INFO">Typing password into text field 'xpath=//input[@placeholder="Password"]'.</msg>
+<msg time="2026-04-27T15:11:24.414290" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_input}</arg>
 <arg>${pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.155576" elapsed="0.048919"/>
+<status status="PASS" start="2026-04-27T15:11:24.400049" elapsed="0.032791"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.204615" elapsed="0.007390"/>
+<status status="PASS" start="2026-04-27T15:11:24.432961" elapsed="0.008455"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:24.212240" level="INFO">Clicking element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]'.</msg>
+<msg time="2026-04-27T15:11:24.441669" level="INFO">Clicking element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]'.</msg>
 <arg>${LoginButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.212110" elapsed="0.026529"/>
+<status status="PASS" start="2026-04-27T15:11:24.441524" elapsed="0.027018"/>
 </kw>
 <arg>${invalid_username}</arg>
 <arg>${password}</arg>
 <doc>Perform successful login with valid credentials.</doc>
-<status status="PASS" start="2026-04-15T15:35:20.001403" elapsed="4.237305"/>
+<status status="PASS" start="2026-04-27T15:11:19.919809" elapsed="4.548800"/>
 </kw>
 <kw name="Verify Login Failed" owner="LoginApp">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.239006" elapsed="0.005362"/>
+<status status="PASS" start="2026-04-27T15:11:24.468917" elapsed="0.005899"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:24.251295" level="INFO">Element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]' is displayed.</msg>
+<msg time="2026-04-27T15:11:24.482842" level="INFO">Element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]' is displayed.</msg>
 <arg>${LoginButton}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.244453" elapsed="0.006902"/>
+<status status="PASS" start="2026-04-27T15:11:24.474919" elapsed="0.007997"/>
 </kw>
 <doc>Ensure login fails and user remains on log in.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.238861" elapsed="0.012550"/>
+<status status="PASS" start="2026-04-27T15:11:24.468761" elapsed="0.014229"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.251584" elapsed="0.141570"/>
+<status status="PASS" start="2026-04-27T15:11:24.483191" elapsed="0.099938"/>
 </kw>
 <doc>Ensure login fails when using an incorrect username.</doc>
 <tag>Login</tag>
 <tag>Negative</tag>
-<status status="PASS" start="2026-04-15T15:35:17.306057" elapsed="7.087185"/>
+<status status="PASS" start="2026-04-27T15:11:17.029369" elapsed="7.553853"/>
 </test>
 <test id="s1-t3" name="Invalid Password (Negative Scenario)" line="29">
 <kw name="Launch App For Login" type="SETUP">
 <kw name="Launch Application" owner="LaunchApp">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:24.394040" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
+<msg time="2026-04-27T15:11:24.584024" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-15T15:35:24.393927" elapsed="1.617911"/>
+<status status="PASS" start="2026-04-27T15:11:24.583912" elapsed="1.556382"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-15T15:35:26.012095" elapsed="0.311826"/>
+<status status="PASS" start="2026-04-27T15:11:26.140564" elapsed="0.310769"/>
 </kw>
 <kw name="Set Screenshot Directory" owner="SeleniumLibrary">
 <arg>${EXECDIR}/Screenshots</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2026-04-15T15:35:26.324047" elapsed="0.000248"/>
+<status status="PASS" start="2026-04-27T15:11:26.451477" elapsed="0.000297"/>
 </kw>
-<status status="PASS" start="2026-04-15T15:35:24.393813" elapsed="1.930538"/>
+<status status="PASS" start="2026-04-27T15:11:24.583810" elapsed="1.868022"/>
 </kw>
 <kw name="Your Connection not Private" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:27.033347" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-45.png"&gt;&lt;img src="Screenshots/selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:27.033494" level="FAIL">Page should have contained text 'Your connection is not private' but did not.</msg>
+<msg time="2026-04-27T15:11:27.499375" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-61.png"&gt;&lt;img src="Screenshots/selenium-screenshot-61.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:27.499836" level="FAIL">Page should have contained text 'Your connection is not private' but did not.</msg>
 <arg>Your connection is not private</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-15T15:35:26.324872" elapsed="0.709012">Page should have contained text 'Your connection is not private' but did not.</status>
+<status status="FAIL" start="2026-04-27T15:11:26.452371" elapsed="1.048274">Page should have contained text 'Your connection is not private' but did not.</status>
 </kw>
-<msg time="2026-04-15T15:35:27.033969" level="INFO">${is_ssl_error} = False</msg>
+<msg time="2026-04-27T15:11:27.500941" level="INFO">${is_ssl_error} = False</msg>
 <var>${is_ssl_error}</var>
 <arg>Page Should Contain</arg>
 <arg>Your connection is not private</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:26.324657" elapsed="0.709325"/>
+<status status="PASS" start="2026-04-27T15:11:26.452149" elapsed="1.048807"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
-<msg time="2026-04-15T15:35:27.034255" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2026-04-27T15:11:27.501633" level="INFO">Returning from the enclosing user keyword.</msg>
 <arg>not ${is_ssl_error}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.034073" elapsed="0.000210"/>
+<status status="PASS" start="2026-04-27T15:11:27.501237" elapsed="0.000424"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${AdvancedButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:27.034345" elapsed="0.000012"/>
+<status status="NOT RUN" start="2026-04-27T15:11:27.501729" elapsed="0.000012"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>simulation.tmforcedev.tm.com.my (unsafe)</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:27.034398" elapsed="0.000010"/>
+<status status="NOT RUN" start="2026-04-27T15:11:27.501783" elapsed="0.000009"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
 <arg>${ProceedLink}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:27.034445" elapsed="0.000008"/>
+<status status="NOT RUN" start="2026-04-27T15:11:27.501827" elapsed="0.000008"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:27.034497" elapsed="0.000009"/>
+<status status="NOT RUN" start="2026-04-27T15:11:27.501885" elapsed="0.000010"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -744,335 +744,335 @@ Without any arguments.</msg>
 <arg>prefs</arg>
 <arg>${CHROME_PREFS}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:27.034544" elapsed="0.000008"/>
+<status status="NOT RUN" start="2026-04-27T15:11:27.501937" elapsed="0.000008"/>
 </kw>
 <doc>Open the browser and handle SSL certificate warning</doc>
-<status status="PASS" start="2026-04-15T15:35:26.324492" elapsed="0.710096"/>
+<status status="PASS" start="2026-04-27T15:11:26.451979" elapsed="1.050014"/>
 </kw>
-<status status="PASS" start="2026-04-15T15:35:24.393674" elapsed="2.640942"/>
+<status status="PASS" start="2026-04-27T15:11:24.583677" elapsed="2.918346"/>
 </kw>
 <kw name="Login App" owner="LoginApp">
 <kw name="Bypass SIT Environment If Needed" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:27.750679" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-46.png"&gt;&lt;img src="Screenshots/selenium-screenshot-46.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:27.750780" level="FAIL">Element with locator 'xpath=//input[@placeholder='Username']' not found.</msg>
+<msg time="2026-04-27T15:11:28.158237" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-62.png"&gt;&lt;img src="Screenshots/selenium-screenshot-62.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:28.158358" level="FAIL">Element with locator 'xpath=//input[@placeholder='Username']' not found.</msg>
 <arg>${username_input}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:27.035161" elapsed="0.716110">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:27.505402" elapsed="0.653506">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:27.752404" level="INFO">${already} = False</msg>
+<msg time="2026-04-27T15:11:28.160983" level="INFO">${already} = False</msg>
 <var>${already}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${username_input}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.035039" elapsed="0.717379"/>
+<status status="PASS" start="2026-04-27T15:11:27.502518" elapsed="0.658484"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
 <arg>${already}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.752504" elapsed="0.000150"/>
+<status status="PASS" start="2026-04-27T15:11:28.161099" elapsed="0.000161"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${SIT_Button}</arg>
 <arg>8s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.752822" elapsed="0.005143"/>
+<status status="PASS" start="2026-04-27T15:11:28.161436" elapsed="0.005377"/>
 </kw>
-<msg time="2026-04-15T15:35:27.758042" level="INFO">${sit} = True</msg>
+<msg time="2026-04-27T15:11:28.166888" level="INFO">${sit} = True</msg>
 <var>${sit}</var>
 <arg>Wait Until Page Contains Element</arg>
 <arg>${SIT_Button}</arg>
 <arg>8s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.752709" elapsed="0.005347"/>
+<status status="PASS" start="2026-04-27T15:11:28.161317" elapsed="0.005585"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
 <arg>not ${sit}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.758124" elapsed="0.000158"/>
+<status status="PASS" start="2026-04-27T15:11:28.166974" elapsed="0.000167"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:27.758649" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:28.167587" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.758483" elapsed="0.002523"/>
+<status status="PASS" start="2026-04-27T15:11:28.167365" elapsed="0.002999"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:28.262345" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:28.672831" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.761073" elapsed="0.501424"/>
+<status status="PASS" start="2026-04-27T15:11:28.170432" elapsed="0.502669"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2026-04-15T15:35:27.758425" elapsed="0.504143"/>
+<status status="PASS" start="2026-04-27T15:11:28.167309" elapsed="0.505914"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:28.263167" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:28.674609" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:28.262849" elapsed="0.003291"/>
+<status status="PASS" start="2026-04-27T15:11:28.673732" elapsed="0.006896"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:28.768585" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:29.182545" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:28.266251" elapsed="0.502642"/>
+<status status="PASS" start="2026-04-27T15:11:28.680956" elapsed="0.501856"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2026-04-15T15:35:28.262736" elapsed="0.506313"/>
+<status status="PASS" start="2026-04-27T15:11:28.673538" elapsed="0.509390"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:28.770520" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:29.184160" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:28.769713" elapsed="0.017584"/>
+<status status="PASS" start="2026-04-27T15:11:29.183407" elapsed="0.015527"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:29.288171" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:29.700940" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:28.787512" elapsed="0.501070"/>
+<status status="PASS" start="2026-04-27T15:11:29.199190" elapsed="0.502151"/>
 </kw>
 <var name="${i}">2</var>
-<status status="PASS" start="2026-04-15T15:35:28.769397" elapsed="0.519424"/>
+<status status="PASS" start="2026-04-27T15:11:29.183186" elapsed="0.518385"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:29.290689" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:29.703666" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:29.289696" elapsed="0.007572"/>
+<status status="PASS" start="2026-04-27T15:11:29.702454" elapsed="0.008323"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:29.799793" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:30.213338" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:29.297579" elapsed="0.502439"/>
+<status status="PASS" start="2026-04-27T15:11:29.711084" elapsed="0.502555"/>
 </kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2026-04-15T15:35:29.289297" elapsed="0.510834"/>
+<status status="PASS" start="2026-04-27T15:11:29.702047" elapsed="0.511763"/>
 </iter>
 <var>${i}</var>
 <value>4</value>
-<status status="PASS" start="2026-04-15T15:35:27.758329" elapsed="2.041891"/>
+<status status="PASS" start="2026-04-27T15:11:28.167188" elapsed="2.046739"/>
 </for>
 <doc>DSS may show SIT/pre-login Webix buttons before the real login form.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.034952" elapsed="2.765417"/>
+<status status="PASS" start="2026-04-27T15:11:27.502433" elapsed="2.711679"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="At Least One Login Control Visible" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:29.823537" level="INFO">Element 'xpath=//input[@placeholder='Username']' is displayed.</msg>
+<msg time="2026-04-27T15:11:30.235912" level="INFO">Element 'xpath=//input[@placeholder='Username']' is displayed.</msg>
 <arg>${username_input}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:29.802163" elapsed="0.021491"/>
+<status status="PASS" start="2026-04-27T15:11:30.216642" elapsed="0.019386"/>
 </kw>
-<msg time="2026-04-15T15:35:29.823822" level="INFO">${user visible} = True</msg>
+<msg time="2026-04-27T15:11:30.236191" level="INFO">${user visible} = True</msg>
 <var>${user visible}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${username_input}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:29.801785" elapsed="0.022068"/>
+<status status="PASS" start="2026-04-27T15:11:30.216122" elapsed="0.020099"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:30.518664" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-47.png"&gt;&lt;img src="Screenshots/selenium-screenshot-47.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:30.518767" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
+<msg time="2026-04-27T15:11:30.887607" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-63.png"&gt;&lt;img src="Screenshots/selenium-screenshot-63.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:30.887706" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:29.824414" elapsed="0.694863">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:30.236775" elapsed="0.651423">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:30.519356" level="INFO">${enter visible} = False</msg>
+<msg time="2026-04-27T15:11:30.888272" level="INFO">${enter visible} = False</msg>
 <var>${enter visible}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:29.824036" elapsed="0.695333"/>
+<status status="PASS" start="2026-04-27T15:11:30.236399" elapsed="0.651885"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${user visible} or ${enter visible}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-15T15:35:30.519455" elapsed="0.000210"/>
+<status status="PASS" start="2026-04-27T15:11:30.888365" elapsed="0.000205"/>
 </kw>
 <doc>True when username field or Enter CTA is already on screen.</doc>
-<status status="PASS" start="2026-04-15T15:35:29.801416" elapsed="0.718284"/>
+<status status="PASS" start="2026-04-27T15:11:30.215609" elapsed="0.672995"/>
 </kw>
 <arg>30s</arg>
 <arg>1s</arg>
 <arg>At Least One Login Control Visible</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-04-15T15:35:29.800648" elapsed="0.719073"/>
+<status status="PASS" start="2026-04-27T15:11:30.214487" elapsed="0.674138"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:31.179344" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-48.png"&gt;&lt;img src="Screenshots/selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:31.179834" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
+<msg time="2026-04-27T15:11:31.524858" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-64.png"&gt;&lt;img src="Screenshots/selenium-screenshot-64.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:31.526083" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:30.519891" elapsed="0.660475">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:30.888794" elapsed="0.637800">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:31.180454" level="INFO">${has_enter} = False</msg>
+<msg time="2026-04-27T15:11:31.526670" level="INFO">${has_enter} = False</msg>
 <var>${has_enter}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:30.519774" elapsed="0.660694"/>
+<status status="PASS" start="2026-04-27T15:11:30.888678" elapsed="0.638004"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${has_enter}</arg>
 <arg>Click Element</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.180562" elapsed="0.000172"/>
+<status status="PASS" start="2026-04-27T15:11:31.526780" elapsed="0.000168"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${username_input}</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.180792" elapsed="0.006192"/>
+<status status="PASS" start="2026-04-27T15:11:31.527003" elapsed="0.006402"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:31.187242" level="INFO">Typing text 'DSS08' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<msg time="2026-04-27T15:11:31.533673" level="INFO">Typing text 'DSS08' into text field 'xpath=//input[@placeholder='Username']'.</msg>
 <arg>${username_input}</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.187094" elapsed="0.145393"/>
+<status status="PASS" start="2026-04-27T15:11:31.533514" elapsed="0.100724"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${password_input}</arg>
 <arg>15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.332778" elapsed="0.009847"/>
+<status status="PASS" start="2026-04-27T15:11:31.634447" elapsed="0.008849"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:31.342938" level="INFO">Typing password into text field 'xpath=//input[@placeholder="Password"]'.</msg>
-<msg time="2026-04-15T15:35:31.361779" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-27T15:11:31.643621" level="INFO">Typing password into text field 'xpath=//input[@placeholder="Password"]'.</msg>
+<msg time="2026-04-27T15:11:31.656722" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_input}</arg>
 <arg>${pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.342763" elapsed="0.039502"/>
+<status status="PASS" start="2026-04-27T15:11:31.643443" elapsed="0.040470"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.382384" elapsed="0.008926"/>
+<status status="PASS" start="2026-04-27T15:11:31.684032" elapsed="0.028854"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:31.391560" level="INFO">Clicking element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]'.</msg>
+<msg time="2026-04-27T15:11:31.713171" level="INFO">Clicking element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]'.</msg>
 <arg>${LoginButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.391424" elapsed="0.030814"/>
+<status status="PASS" start="2026-04-27T15:11:31.713013" elapsed="0.030853"/>
 </kw>
 <arg>${username}</arg>
 <arg>${invalid_password}</arg>
 <doc>Perform successful login with valid credentials.</doc>
-<status status="PASS" start="2026-04-15T15:35:27.034766" elapsed="4.387551"/>
+<status status="PASS" start="2026-04-27T15:11:27.502210" elapsed="4.241724"/>
 </kw>
 <kw name="Verify Login Failed" owner="LoginApp">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.422656" elapsed="0.005422"/>
+<status status="PASS" start="2026-04-27T15:11:31.744237" elapsed="0.008060"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:31.434562" level="INFO">Element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]' is displayed.</msg>
+<msg time="2026-04-27T15:11:31.762603" level="INFO">Element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]' is displayed.</msg>
 <arg>${LoginButton}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.428169" elapsed="0.006455"/>
+<status status="PASS" start="2026-04-27T15:11:31.752410" elapsed="0.010258"/>
 </kw>
 <doc>Ensure login fails and user remains on log in.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.422504" elapsed="0.012179"/>
+<status status="PASS" start="2026-04-27T15:11:31.744084" elapsed="0.018639"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.434853" elapsed="0.119220"/>
+<status status="PASS" start="2026-04-27T15:11:31.762891" elapsed="0.112315"/>
 </kw>
 <doc>Ensure login fails when using an incorrect password.</doc>
 <tag>Login</tag>
 <tag>Negative</tag>
-<status status="PASS" start="2026-04-15T15:35:24.393428" elapsed="7.160729"/>
+<status status="PASS" start="2026-04-27T15:11:24.583406" elapsed="7.291882"/>
 </test>
 <test id="s1-t4" name="Empty Credentials (Negative Scenario)" line="35">
 <kw name="Launch App For Login" type="SETUP">
 <kw name="Launch Application" owner="LaunchApp">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:31.554901" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
+<msg time="2026-04-27T15:11:31.876072" level="INFO">Opening browser 'chrome' to base url 'https://myforce.tmrnd.com.my'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-15T15:35:31.554799" elapsed="1.026189"/>
+<status status="PASS" start="2026-04-27T15:11:31.875963" elapsed="1.480022"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-15T15:35:32.581723" elapsed="1.441635"/>
+<status status="PASS" start="2026-04-27T15:11:33.356261" elapsed="0.311557"/>
 </kw>
 <kw name="Set Screenshot Directory" owner="SeleniumLibrary">
 <arg>${EXECDIR}/Screenshots</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2026-04-15T15:35:34.023488" elapsed="0.000247"/>
+<status status="PASS" start="2026-04-27T15:11:33.667958" elapsed="0.000288"/>
 </kw>
-<status status="PASS" start="2026-04-15T15:35:31.554700" elapsed="2.469093"/>
+<status status="PASS" start="2026-04-27T15:11:31.875856" elapsed="1.792455"/>
 </kw>
 <kw name="Your Connection not Private" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:34.374443" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-49.png"&gt;&lt;img src="Screenshots/selenium-screenshot-49.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:34.374693" level="FAIL">Page should have contained text 'Your connection is not private' but did not.</msg>
+<msg time="2026-04-27T15:11:34.396429" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-65.png"&gt;&lt;img src="Screenshots/selenium-screenshot-65.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:34.398021" level="FAIL">Page should have contained text 'Your connection is not private' but did not.</msg>
 <arg>Your connection is not private</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-15T15:35:34.024271" elapsed="0.351014">Page should have contained text 'Your connection is not private' but did not.</status>
+<status status="FAIL" start="2026-04-27T15:11:33.668934" elapsed="0.730617">Page should have contained text 'Your connection is not private' but did not.</status>
 </kw>
-<msg time="2026-04-15T15:35:34.375442" level="INFO">${is_ssl_error} = False</msg>
+<msg time="2026-04-27T15:11:34.399959" level="INFO">${is_ssl_error} = False</msg>
 <var>${is_ssl_error}</var>
 <arg>Page Should Contain</arg>
 <arg>Your connection is not private</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:34.024071" elapsed="0.351386"/>
+<status status="PASS" start="2026-04-27T15:11:33.668670" elapsed="0.731304"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
-<msg time="2026-04-15T15:35:34.375930" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2026-04-27T15:11:34.401006" level="INFO">Returning from the enclosing user keyword.</msg>
 <arg>not ${is_ssl_error}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:34.375657" elapsed="0.000304"/>
+<status status="PASS" start="2026-04-27T15:11:34.400319" elapsed="0.000729"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${AdvancedButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:34.376038" elapsed="0.000014"/>
+<status status="NOT RUN" start="2026-04-27T15:11:34.401129" elapsed="0.000013"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>simulation.tmforcedev.tm.com.my (unsafe)</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:34.376100" elapsed="0.000011"/>
+<status status="NOT RUN" start="2026-04-27T15:11:34.401188" elapsed="0.000010"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
 <arg>${ProceedLink}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:34.376152" elapsed="0.000009"/>
+<status status="NOT RUN" start="2026-04-27T15:11:34.401232" elapsed="0.000009"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:34.376659" elapsed="0.000024"/>
+<status status="NOT RUN" start="2026-04-27T15:11:34.401402" elapsed="0.000010"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -1080,272 +1080,272 @@ Without any arguments.</msg>
 <arg>prefs</arg>
 <arg>${CHROME_PREFS}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" start="2026-04-15T15:35:34.376751" elapsed="0.000013"/>
+<status status="NOT RUN" start="2026-04-27T15:11:34.401457" elapsed="0.000009"/>
 </kw>
 <doc>Open the browser and handle SSL certificate warning</doc>
-<status status="PASS" start="2026-04-15T15:35:34.023924" elapsed="0.352906"/>
+<status status="PASS" start="2026-04-27T15:11:33.668474" elapsed="0.733056"/>
 </kw>
-<status status="PASS" start="2026-04-15T15:35:31.554562" elapsed="2.822307"/>
+<status status="PASS" start="2026-04-27T15:11:31.875721" elapsed="2.525840"/>
 </kw>
 <kw name="Login App" owner="LoginApp">
 <kw name="Bypass SIT Environment If Needed" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:35.162069" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-50.png"&gt;&lt;img src="Screenshots/selenium-screenshot-50.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:35.162188" level="FAIL">Element with locator 'xpath=//input[@placeholder='Username']' not found.</msg>
+<msg time="2026-04-27T15:11:35.127955" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-66.png"&gt;&lt;img src="Screenshots/selenium-screenshot-66.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:35.128063" level="FAIL">Element with locator 'xpath=//input[@placeholder='Username']' not found.</msg>
 <arg>${username_input}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:34.379703" elapsed="0.783068">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:34.403768" elapsed="0.725557">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:35.162851" level="INFO">${already} = False</msg>
+<msg time="2026-04-27T15:11:35.129410" level="INFO">${already} = False</msg>
 <var>${already}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${username_input}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:34.379549" elapsed="0.783316"/>
+<status status="PASS" start="2026-04-27T15:11:34.403576" elapsed="0.725848"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
 <arg>${already}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:35.162953" elapsed="0.000163"/>
+<status status="PASS" start="2026-04-27T15:11:35.129514" elapsed="0.000169"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${SIT_Button}</arg>
 <arg>8s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-15T15:35:35.163297" elapsed="0.005390"/>
+<status status="PASS" start="2026-04-27T15:11:35.129867" elapsed="0.005371"/>
 </kw>
-<msg time="2026-04-15T15:35:35.168768" level="INFO">${sit} = True</msg>
+<msg time="2026-04-27T15:11:35.135311" level="INFO">${sit} = True</msg>
 <var>${sit}</var>
 <arg>Wait Until Page Contains Element</arg>
 <arg>${SIT_Button}</arg>
 <arg>8s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:35.163174" elapsed="0.005610"/>
+<status status="PASS" start="2026-04-27T15:11:35.129741" elapsed="0.005585"/>
 </kw>
 <kw name="Return From Keyword If" owner="BuiltIn">
 <arg>not ${sit}</arg>
 <doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:35.168859" elapsed="0.000174"/>
+<status status="PASS" start="2026-04-27T15:11:35.135396" elapsed="0.000152"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:35.169493" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:35.136156" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:35.169262" elapsed="0.002757"/>
+<status status="PASS" start="2026-04-27T15:11:35.135758" elapsed="0.005610"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:35.673439" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:35.643163" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:35.172099" elapsed="0.501642"/>
+<status status="PASS" start="2026-04-27T15:11:35.141463" elapsed="0.501929"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2026-04-15T15:35:35.169209" elapsed="0.504694"/>
+<status status="PASS" start="2026-04-27T15:11:35.135703" elapsed="0.507822"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:35.681657" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:35.645073" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:35.674463" elapsed="0.009834"/>
+<status status="PASS" start="2026-04-27T15:11:35.644170" elapsed="0.007302"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:36.185585" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:36.152685" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:35.684403" elapsed="0.501261"/>
+<status status="PASS" start="2026-04-27T15:11:35.651722" elapsed="0.501210"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2026-04-15T15:35:35.674204" elapsed="0.511502"/>
+<status status="PASS" start="2026-04-27T15:11:35.643906" elapsed="0.509179"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:36.186105" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:36.154231" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:36.185874" elapsed="0.006516"/>
+<status status="PASS" start="2026-04-27T15:11:36.153557" elapsed="0.015977"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:36.693113" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:36.671236" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:36.192592" elapsed="0.500787"/>
+<status status="PASS" start="2026-04-27T15:11:36.169794" elapsed="0.501742"/>
 </kw>
 <var name="${i}">2</var>
-<status status="PASS" start="2026-04-15T15:35:36.185792" elapsed="0.507732"/>
+<status status="PASS" start="2026-04-27T15:11:36.153343" elapsed="0.518377"/>
 </iter>
 <iter>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:36.695062" level="INFO">Executing JavaScript:
+<msg time="2026-04-27T15:11:36.673461" level="INFO">Executing JavaScript:
 document.querySelectorAll('button.webix_button')[0].click()
 Without any arguments.</msg>
 <arg>document.querySelectorAll('button.webix_button')[0].click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-15T15:35:36.694179" elapsed="0.006854"/>
+<status status="PASS" start="2026-04-27T15:11:36.672490" elapsed="0.006957"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-04-15T15:35:37.203336" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2026-04-27T15:11:37.182419" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-04-15T15:35:36.701159" elapsed="0.502611"/>
+<status status="PASS" start="2026-04-27T15:11:36.679772" elapsed="0.503017"/>
 </kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2026-04-15T15:35:36.693834" elapsed="0.510166"/>
+<status status="PASS" start="2026-04-27T15:11:36.672130" elapsed="0.510808"/>
 </iter>
 <var>${i}</var>
 <value>4</value>
-<status status="PASS" start="2026-04-15T15:35:35.169092" elapsed="2.035095"/>
+<status status="PASS" start="2026-04-27T15:11:35.135600" elapsed="2.047603"/>
 </for>
 <doc>DSS may show SIT/pre-login Webix buttons before the real login form.</doc>
-<status status="PASS" start="2026-04-15T15:35:34.379443" elapsed="2.825067"/>
+<status status="PASS" start="2026-04-27T15:11:34.403445" elapsed="2.779940"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="At Least One Login Control Visible" owner="LoginApp">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:37.220776" level="INFO">Element 'xpath=//input[@placeholder='Username']' is displayed.</msg>
+<msg time="2026-04-27T15:11:37.206739" level="INFO">Element 'xpath=//input[@placeholder='Username']' is displayed.</msg>
 <arg>${username_input}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:37.207594" elapsed="0.013242"/>
+<status status="PASS" start="2026-04-27T15:11:37.185436" elapsed="0.021427"/>
 </kw>
-<msg time="2026-04-15T15:35:37.220918" level="INFO">${user visible} = True</msg>
+<msg time="2026-04-27T15:11:37.207034" level="INFO">${user visible} = True</msg>
 <var>${user visible}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${username_input}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:37.207163" elapsed="0.013767"/>
+<status status="PASS" start="2026-04-27T15:11:37.185030" elapsed="0.022036"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:38.020752" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-51.png"&gt;&lt;img src="Screenshots/selenium-screenshot-51.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:38.020861" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
+<msg time="2026-04-27T15:11:37.885941" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-67.png"&gt;&lt;img src="Screenshots/selenium-screenshot-67.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:37.886047" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:37.221187" elapsed="0.800539">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:37.207639" elapsed="0.680175">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:38.021814" level="INFO">${enter visible} = False</msg>
+<msg time="2026-04-27T15:11:37.887894" level="INFO">${enter visible} = False</msg>
 <var>${enter visible}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:37.221012" elapsed="0.800816"/>
+<status status="PASS" start="2026-04-27T15:11:37.207248" elapsed="0.680659"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${user visible} or ${enter visible}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.021921" elapsed="0.000237"/>
+<status status="PASS" start="2026-04-27T15:11:37.887987" elapsed="0.000209"/>
 </kw>
 <doc>True when username field or Enter CTA is already on screen.</doc>
-<status status="PASS" start="2026-04-15T15:35:37.206583" elapsed="0.815612"/>
+<status status="PASS" start="2026-04-27T15:11:37.184634" elapsed="0.703596"/>
 </kw>
 <arg>30s</arg>
 <arg>1s</arg>
 <arg>At Least One Login Control Visible</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-04-15T15:35:37.205264" elapsed="0.816955"/>
+<status status="PASS" start="2026-04-27T15:11:37.183708" elapsed="0.704544"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:38.656362" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-52.png"&gt;&lt;img src="Screenshots/selenium-screenshot-52.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-15T15:35:38.656458" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
+<msg time="2026-04-27T15:11:38.515037" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/selenium-screenshot-68.png"&gt;&lt;img src="Screenshots/selenium-screenshot-68.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T15:11:38.515141" level="FAIL">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</msg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-15T15:35:38.022402" elapsed="0.634547">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
+<status status="FAIL" start="2026-04-27T15:11:37.888421" elapsed="0.627227">Element with locator 'xpath=//button[contains(@class,'webix_button') and contains(normalize-space(.),'Enter')]' not found.</status>
 </kw>
-<msg time="2026-04-15T15:35:38.657028" level="INFO">${has_enter} = False</msg>
+<msg time="2026-04-27T15:11:38.515728" level="INFO">${has_enter} = False</msg>
 <var>${has_enter}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.022278" elapsed="0.634762"/>
+<status status="PASS" start="2026-04-27T15:11:37.888304" elapsed="0.627438"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${has_enter}</arg>
 <arg>Click Element</arg>
 <arg>${EnterLogin_btn}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.657124" elapsed="0.000164"/>
+<status status="PASS" start="2026-04-27T15:11:38.515832" elapsed="0.000161"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${username_input}</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.657345" elapsed="0.005956"/>
+<status status="PASS" start="2026-04-27T15:11:38.516050" elapsed="0.006067"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:38.663545" level="INFO">Typing text '' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<msg time="2026-04-27T15:11:38.522355" level="INFO">Typing text '' into text field 'xpath=//input[@placeholder='Username']'.</msg>
 <arg>${username_input}</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.663396" elapsed="0.039597"/>
+<status status="PASS" start="2026-04-27T15:11:38.522215" elapsed="0.036511"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${password_input}</arg>
 <arg>15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.703104" elapsed="0.008433"/>
+<status status="PASS" start="2026-04-27T15:11:38.558839" elapsed="0.008781"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:38.711790" level="INFO">Typing password into text field 'xpath=//input[@placeholder="Password"]'.</msg>
-<msg time="2026-04-15T15:35:38.723512" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-27T15:11:38.567877" level="INFO">Typing password into text field 'xpath=//input[@placeholder="Password"]'.</msg>
+<msg time="2026-04-27T15:11:38.579587" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_input}</arg>
 <arg>${pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.711648" elapsed="0.026270"/>
+<status status="PASS" start="2026-04-27T15:11:38.567733" elapsed="0.027817"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.738028" elapsed="0.007590"/>
+<status status="PASS" start="2026-04-27T15:11:38.595665" elapsed="0.010429"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:38.745853" level="INFO">Clicking element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]'.</msg>
+<msg time="2026-04-27T15:11:38.606384" level="INFO">Clicking element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]'.</msg>
 <arg>${LoginButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.745720" elapsed="0.033266"/>
+<status status="PASS" start="2026-04-27T15:11:38.606222" elapsed="0.027986"/>
 </kw>
 <arg>${EMPTY}</arg>
 <arg>${EMPTY}</arg>
 <doc>Perform successful login with valid credentials.</doc>
-<status status="PASS" start="2026-04-15T15:35:34.377081" elapsed="4.401980"/>
+<status status="PASS" start="2026-04-27T15:11:34.401844" elapsed="4.232429"/>
 </kw>
 <kw name="Verify Login Failed" owner="LoginApp">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.779374" elapsed="0.010830"/>
+<status status="PASS" start="2026-04-27T15:11:38.634568" elapsed="0.005377"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-04-15T15:35:38.796137" level="INFO">Element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]' is displayed.</msg>
+<msg time="2026-04-27T15:11:38.646974" level="INFO">Element 'xpath=//button[@type='button' and contains(@class, 'webix_button') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login') and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'password')]' is displayed.</msg>
 <arg>${LoginButton}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.790316" elapsed="0.005884"/>
+<status status="PASS" start="2026-04-27T15:11:38.640037" elapsed="0.006997"/>
 </kw>
 <doc>Ensure login fails and user remains on log in.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.779222" elapsed="0.017033"/>
+<status status="PASS" start="2026-04-27T15:11:38.634421" elapsed="0.012664"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-15T15:35:38.796424" elapsed="0.234217"/>
+<status status="PASS" start="2026-04-27T15:11:38.647249" elapsed="0.122693"/>
 </kw>
 <doc>Ensure login fails when submitting empty fields.</doc>
 <tag>Login</tag>
 <tag>Negative</tag>
-<status status="PASS" start="2026-04-15T15:35:31.554322" elapsed="7.476401"/>
+<status status="PASS" start="2026-04-27T15:11:31.875459" elapsed="6.894567"/>
 </test>
-<status status="PASS" start="2026-04-15T15:35:02.333535" elapsed="36.697539"/>
+<status status="PASS" start="2026-04-27T15:10:56.799779" elapsed="41.970606"/>
 </suite>
 <statistics>
 <total>

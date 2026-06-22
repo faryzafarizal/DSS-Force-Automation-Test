@@ -8,7 +8,7 @@ Resource    ./DashboardDSS.robot
 Navigate To Ticket Report
     [Documentation]    Navigate to Ticket Report under Reports
     Expand Reports Menu
-    Wait Until Element Is Visible    ${SIDEBAR_TICKET_REPORT}    10s
+    Wait Until Element Is Present    ${SIDEBAR_TICKET_REPORT}    10s
     Safe Click    ${SIDEBAR_TICKET_REPORT}
     Wait Until Page Contains    Ticket Report    10s
 
@@ -101,7 +101,7 @@ Expand Reports Menu
     
     # Check if sub-items are already visible (meaning Reports is already expanded)
     # If not visible, click the Reports parent to expand it
-    ${ticket_report_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${SIDEBAR_TICKET_REPORT}
+    ${ticket_report_visible}=    Run Keyword And Return Status    Wait Until Element Is Present    ${SIDEBAR_TICKET_REPORT}    3s
     Run Keyword If    not ${ticket_report_visible}    Click Element    ${Reports}
     
     # Final check for sub-items
